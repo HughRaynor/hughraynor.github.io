@@ -6,7 +6,6 @@ title:            HRay
 tagline:          'Penetration Tester'
 description:      'A twenty-something Penetration Tester'
 url:              http://hray.co.uk
-baseurl:          /
 
 author:
   name:           'Hugh Raynor'
