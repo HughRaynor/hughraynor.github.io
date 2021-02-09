@@ -7,14 +7,11 @@ title: About
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I am an NCSC accredited CHECK Team Member, CREST Registered Tester, Cyber Essentials (Plus) Assessor and <a href="https://www.youracclaim.com/badges/05167d13-d811-4389-880e-4061859e0bff/public_url">GIAC GICSP</a>, as well as being an avid reasearcher. I have strong interests in Industrial Control Systems/SCADA/Operational Technology; quantitative, technical assessments of information systems mapped to the NIST Cyber Security Framework; and Red Team scenario development and support.<p>I graduated from the University of Birmingham in 2018 with a BSc. in Computer Science.</p>
 
-There are currently two themes built on Poole:
+<p>Outside of cyber security, I'm an avid fan of driving and motorsport. In my spare time I volunteer as a Local Observer for the <a href="https://www.iam-bristol.org.uk/">Bristol group of IAM RoadSmart</a>, formerly the Institute of Advanced Motorists.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
+<p>Should you wish to contact me, you can do so via <a href="mailto:hugh@hray.co.uk">email</a>, <a href="https://twitter.com/HughRaynor">Twitter</a>, or <a href="https://linkedin.com/in/hughraynor">LinkedIn</a>. </p> <p> My primary PGP key is available <a href="{{site.url}}">here</a> for secure communication.</p>
 
 ## Setup
 
