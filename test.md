@@ -1,5 +1,6 @@
 ---
-title: Hugh Raynor
+title: About
+layout: default
 ---
 ## Hugh Raynor
 
