@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This website was created as a demonstration for Jekyll custom theme
   named minimal-categorized. Its main feature is to aggregate posts into
   categories, witch are easily distinguishable
-baseurl: "/minimal-categorized" # the subpath of your site, e.g. /blog
+#baseurl: "/minimal-categorized" # the subpath of your site, e.g. /blog
 url: "https://itsmeaga1n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: itsmeaga1n
 twitter:
