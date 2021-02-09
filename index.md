@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-Test!
+This is a test of the minimal theme and formatting.
 
 ### Markdown
 
