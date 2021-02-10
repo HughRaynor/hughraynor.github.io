@@ -9,7 +9,8 @@ If you'd like to contact me, feel free to reach out via any of the social platfo
 
 [Download PGP Key]({{ site.baseurl }}public/hray.asc)
 
-```-----BEGIN PGP PUBLIC KEY BLOCK-----
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF5bswoBEADsUXgkZXR1HHPP0U+SfuWjS6g20mgjj+isSLTHEBvE5oui+GCJ
 EgtIVoF3jLJnR0B75/89aB9rp8HMIdzPgkyzlomuRClcbG+SzUfCO0AFEeSZbhfc
@@ -89,4 +90,5 @@ bIrA5FMVcn0hKeNxoQvMG0G9aEXhrPIpAQgb4pa5aabUWTrOfUPpGt/1Vj5U3fGJ
 V2eutcZ2Kmhc4PdFd1veceMYbakv2yEtMsDshidickQz0y3GSGF8Nw2klfdJEekD
 /7mH32i+Ojg=
 =F5+d
------END PGP PUBLIC KEY BLOCK-----```
+-----END PGP PUBLIC KEY BLOCK-----
+```
