@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-
+## Most Recent Post
 {% assign post = site.posts.first %}
 <div class="c-hero" style="background: url({{post.thumbnail_image.large | relative_url}})bottom center / cover no-repeat;">
    <h1 class="c-hero__title">{{ post.title }}</h1>
