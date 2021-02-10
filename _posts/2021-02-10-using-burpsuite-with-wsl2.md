@@ -5,6 +5,7 @@ intro: WSL2 on the command-line is natively great for infrastructure testing, bu
 ---
 
 Windows Subsystem for Linux 2 (WSL2) is in a great place right now. Almost all of the issues that plagued Microsoft's first WSL release have been resolved. The only issue I'm still aware of is some difficulty surrounding mounting additional virtual disks within WSL -- but that's hardly a day-to-day inconvenience. As a result, I've finally ditched VMWare and fully made the transition to WSL2.
+
 WSL2 on the command-line is natively great for infrastructure testing, but when assessing web applications, some form of GUI is of course required. Various solutions exist to this problem, including the use of [Win-Kex](https://www.kali.org/docs/wsl/win-kex/) for Kali Linux. Whilst initially an acceptable solution, I grew unhappy with the VNC solution, and wanted a true WSL 2 terminal experience. As most VPN profiles (such as those used with [HackTheBox](https://app.hackthebox.eu/) or [TryHackMe](https://tryhackme.com/)) only permit a single connection, either the Windows host OR the WSL2 environment can be connected when using a VPN. With a bit of tinkering, I was able to establish a way of getting things working with a VPN running inside WSL2, and running BurpSuite successfully on my Windows host, keeping my desktop environment clean and tidy.
 
 
@@ -24,13 +25,13 @@ To achieve this, we need to create a Scheduled Task to run just after log on. Op
 
 ### General
 
-![Task Scheduler 'General' Tab]({{site.baseurl}}public/wsl2-taskscheduler-general.png "Task Scheduler 'General' Tab")
+![Task Scheduler 'General' Tab]({{site.baseurl}}public/wsl2-taskscheduler-general.PNG "Task Scheduler 'General' Tab")
 
 Name your task something appropriate, and ensure that the 'Run with highest privileges' option is selected in order to allow Administrator level commands to execute.
 
 ### Triggers
 
-![Task Scheduler 'Triggers' Tab]({{site.baseurl}}public/wsl2-taskscheduler-trigger.png "Task Scheduler 'Triggers' Tab")
+![Task Scheduler 'Triggers' Tab]({{site.baseurl}}public/wsl2-taskscheduler-trigger.PNG "Task Scheduler 'Triggers' Tab")
 
 Configure the task to begin at log on, with a delay of 10 seconds.
 
@@ -81,7 +82,7 @@ In order for the `$remoteport = bash.exe -c "ip addr | grep -Ee 'inet 172'"` com
 
 You can check your default wsl environment with the command `wslconfig /l`. As Ubuntu was my default, I needed to follow this up with `wslconfig /setdefault kali-linux`. You may have to do the same for your distribution.
 
-![Task Scheduler 'Action' Tab]({{site.baseurl}}public/wsl2-taskscheduler-action.png "Task Scheduler 'Action' Tab")
+![Task Scheduler 'Action' Tab]({{site.baseurl}}public/wsl2-taskscheduler-action.PNG "Task Scheduler 'Action' Tab")
 
 The suggestion on GitHub is to set the system-wide execution policy to unrestricted. I wasn't keen on that approach, so instead just configured the action to execute with the `-ep bypass` arguments.
 
@@ -93,7 +94,7 @@ My approach makes use of two proxies; BurpSuite's own HTTP interception proxy, a
 
 By default, mitmproxy runs on port 8080, which is why I have forwarded that port in my PowerShell script. After getting mitmproxy running, visit [mitm.it](https://mitm.it) and download the CA certificates. You will need to install these on Windows, as you would have done for Burp.
 
-![BurpSuite Upstream Proxy]({{site.baseurl}}public/wsl2-burp-upstream.png "BurpSuite Upstream Proxy")
+![BurpSuite Upstream Proxy]({{site.baseurl}}public/wsl2-burp-upstream.PNG "BurpSuite Upstream Proxy")
 
 Configure your burp proxy _listener_ in your browser as you would usually. As we're running mitm port-forwarded on 8080, I chose to run my burp proxy on 8081.
 
@@ -101,6 +102,6 @@ From there, you will need to configure an upstream proxy in BurpSuite. You can f
 
 ### Usage
 
-![WSL2 Console Proxy]({{site.baseurl}}public/wsl2-console-proxy.png "WSL2 Console Proxy")
+![WSL2 Console Proxy]({{site.baseurl}}public/wsl2-console-proxy.PNG "WSL2 Console Proxy")
 
 With that done, our solution is complete. We should be able to connect to our VPN within WSL, launch mitmproxy, and then use BurpSuite on our host!
