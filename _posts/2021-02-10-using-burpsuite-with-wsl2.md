@@ -2,6 +2,8 @@
 layout: post
 title: Using BurpSuite with WSL2
 intro: WSL2 on the command-line is natively great for infrastructure testing, but when assessing web applications, some form of GUI is of course required. Various solutions exist to this problem, including the use of [Win-Kex](https://www.kali.org/docs/wsl/win-kex/) for Kali Linux. Whilst initially an acceptable solution, I grew unhappy with the VNC solution, and wanted a true WSL 2 terminal experience. With a bit of tinkering, I was able to establish a way of getting things working with a VPN running inside WSL2, and running BurpSuite on my Windows host, keeping my desktop environment clean and tidy.
+thumbnail_image.small: {{site.baseurl}}public/wsl2header-small.png
+thumbnail_image.large: {{site.baseurl}}public/wsl2header-large.png
 ---
 
 Windows Subsystem for Linux 2 (WSL2) is in a great place right now. Almost all of the issues that plagued Microsoft's first WSL release have been resolved. The only issue I'm still aware of is some difficulty surrounding mounting additional virtual disks within WSL -- but that's hardly a day-to-day inconvenience. As a result, I've finally ditched VMWare and fully made the transition to WSL2.
@@ -102,8 +104,6 @@ From there, you will need to configure an upstream proxy in BurpSuite. You can f
 
 ### Usage
 
-![WSL2 Console Proxy]({{site.baseurl}}public/wsl2-console-proxy.PNG "WSL2 Console Proxy")
-
-> The connection errors here are due to pihole DNS filtering
+![WSL2 Console Proxy]({{site.baseurl}}public/burp-and-wsl2.PNG "WSL2 Console Proxy")
 
 With that done, our solution is complete. We should be able to connect to our VPN within WSL, launch mitmproxy, and then use BurpSuite on our host!
