@@ -2,9 +2,6 @@
 layout: page
 title: Download PGP Key
 ---
-
-## Contact & PGP
-
 If you'd like to contact me, feel free to reach out via any of the social platforms listed in the sidebar. Alternatively, you can grab my PGP key below.
 
 [Download PGP Key]({{ site.baseurl }}public/hray.asc)
