@@ -104,4 +104,6 @@ From there, you will need to configure an upstream proxy in BurpSuite. You can f
 
 ![WSL2 Console Proxy]({{site.baseurl}}public/wsl2-console-proxy.PNG "WSL2 Console Proxy")
 
+> The connection errors here are due to pihole DNS filtering
+
 With that done, our solution is complete. We should be able to connect to our VPN within WSL, launch mitmproxy, and then use BurpSuite on our host!
