@@ -5,7 +5,7 @@ intro: WSL2 on the command-line is natively great for infrastructure testing, bu
 comments: true
 image: wsl-header.png
 ---
-<img src="{{site.url}}public/wsl-header.png" align="right">
+<img src="{{site.url}}/public/wsl-header.png" align="right">
 
 Windows Subsystem for Linux 2 (WSL2) is in a great place right now. Almost all of the issues that plagued Microsoft's first WSL release have been resolved. The only issue I'm still aware of is some difficulty surrounding mounting additional virtual disks within WSL -- but that's hardly a day-to-day inconvenience. As a result, I've finally ditched VMWare and fully made the transition to WSL2.
 
