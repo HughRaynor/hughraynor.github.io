@@ -2,6 +2,7 @@
 layout: post
 title: Using BurpSuite with WSL2
 intro: WSL2 on the command-line is natively great for infrastructure testing, but when assessing web applications, some form of GUI is of course required. Various solutions exist to this problem, including the use of [Win-Kex](https://www.kali.org/docs/wsl/win-kex/) for Kali Linux. Whilst initially an acceptable solution, I grew unhappy with the VNC solution, and wanted a true WSL 2 terminal experience. With a bit of tinkering, I was able to establish a way of getting things working with a VPN running inside WSL2, and running BurpSuite on my Windows host, keeping my desktop environment clean and tidy.
+comments: true
 ---
 <img src="{{site.baseurl}}public/wsl-header.png" align="right">
 
