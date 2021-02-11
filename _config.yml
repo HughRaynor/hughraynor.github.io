@@ -14,8 +14,7 @@ author:
 
 paginate:         5
 
-# Comments
- comments:
-   provider: disqus
- disqus: 
-   short_name: hray
+comments:
+  provider: disqus
+disqus: 
+  short_name: hray
