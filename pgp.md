@@ -4,7 +4,7 @@ title: Download PGP Key
 ---
 If you'd like to contact me, feel free to reach out via any of the social platforms listed in the sidebar. Alternatively, you can grab my PGP key below and email me at hugh@hray.co.uk
 
-[Download PGP Key]({{ site.baseurl }}public/hray.asc)
+[Download PGP Key]({{ site.url }}public/hray.asc)
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
