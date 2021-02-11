@@ -9,6 +9,7 @@ baseurl:          http://hray.co.uk/
 author:
   name:           'Hugh Raynor'
   url:            https://twitter.com/HughRaynor
+  twitter:        HughRaynor
 
 paginate:         5
 
@@ -16,3 +17,6 @@ comments:
   provider: disqus
 disqus: 
   short_name: hray
+
+plugins:
+  - jekyll-seo-tag
