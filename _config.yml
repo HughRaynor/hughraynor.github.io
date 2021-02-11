@@ -13,3 +13,9 @@ author:
   url:            https://twitter.com/HughRaynor
 
 paginate:         5
+
+# Comments
+ comments:
+   provider: disqus
+ disqus: 
+   short_name: hray
