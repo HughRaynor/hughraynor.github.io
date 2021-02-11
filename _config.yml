@@ -1,4 +1,4 @@
-permalinks: pretty
+permalink: pretty
 # Setup
 title:            HRay
 tagline:          'Penetration Tester'
