@@ -28,13 +28,13 @@ To achieve this, we need to create a Scheduled Task to run just after log on. Op
 
 ### General
 
-![Task Scheduler 'General' Tab]({{site.url}}public/wsl2-taskscheduler-general.PNG "Task Scheduler 'General' Tab")
+![Task Scheduler 'General' Tab]({{site.url}}/public/wsl2-taskscheduler-general.PNG "Task Scheduler 'General' Tab")
 
 Name your task something appropriate, and ensure that the 'Run with highest privileges' option is selected in order to allow Administrator level commands to execute.
 
 ### Triggers
 
-![Task Scheduler 'Triggers' Tab]({{site.url}}public/wsl2-taskscheduler-trigger.PNG "Task Scheduler 'Triggers' Tab")
+![Task Scheduler 'Triggers' Tab]({{site.url}}/public/wsl2-taskscheduler-trigger.PNG "Task Scheduler 'Triggers' Tab")
 
 Configure the task to begin at log on, with a delay of 10 seconds.
 
@@ -85,7 +85,7 @@ In order for the `$remoteport = bash.exe -c "ip addr | grep -Ee 'inet 172'"` com
 
 You can check your default wsl environment with the command `wslconfig /l`. As Ubuntu was my default, I needed to follow this up with `wslconfig /setdefault kali-linux`. You may have to do the same for your distribution.
 
-![Task Scheduler 'Action' Tab]({{site.url}}public/wsl2-taskscheduler-action.PNG "Task Scheduler 'Action' Tab")
+![Task Scheduler 'Action' Tab]({{site.url}}/public/wsl2-taskscheduler-action.PNG "Task Scheduler 'Action' Tab")
 
 The suggestion on GitHub is to set the system-wide execution policy to unrestricted. I wasn't keen on that approach, so instead just configured the action to execute with the `-ep bypass` arguments.
 
@@ -97,7 +97,7 @@ My approach makes use of two proxies; BurpSuite's own HTTP interception proxy, a
 
 By default, mitmproxy runs on port 8080, which is why I have forwarded that port in my PowerShell script. After getting mitmproxy running, visit [mitm.it](https://mitm.it) and download the CA certificates. You will need to install these on Windows, as you would have done for Burp.
 
-![BurpSuite Upstream Proxy]({{site.url}}public/wsl2-burp-upstream.PNG "BurpSuite Upstream Proxy")
+![BurpSuite Upstream Proxy]({{site.url}}/public/wsl2-burp-upstream.PNG "BurpSuite Upstream Proxy")
 
 Configure your burp proxy _listener_ in your browser as you would usually. As we're running mitm port-forwarded on 8080, I chose to run my burp proxy on 8081.
 
@@ -105,6 +105,6 @@ From there, you will need to configure an upstream proxy in BurpSuite. You can f
 
 ### Usage
 
-![WSL2 Console Proxy]({{site.url}}public/burp-and-wsl2.PNG "WSL2 Console Proxy")
+![WSL2 Console Proxy]({{site.url}}/public/burp-and-wsl2.PNG "WSL2 Console Proxy")
 
 With that done, our solution is complete. We should be able to connect to our VPN within WSL, launch mitmproxy, and then use BurpSuite on our host!
