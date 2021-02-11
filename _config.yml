@@ -3,8 +3,7 @@ permalink: pretty
 title:            HRay
 tagline:          'Penetration Tester'
 description:      'A twenty-something Penetration Tester'
-url:              http://hray.co.uk/
-baseurl:          http://hray.co.uk/
+url:              https://hray.co.uk/
 
 author:
   name:           'Hugh Raynor'
