@@ -89,7 +89,7 @@ You can check your default wsl environment with the command `wslconfig /l`. As U
 
 The suggestion on GitHub is to set the system-wide execution policy to unrestricted. I wasn't keen on that approach, so instead just configured the action to execute with the `-ep bypass` arguments.
 
-Save your script, set it as the target of the Task Scheduler action, and accept the changes to create the task! Run the script once now, and it will then automatically run when you log in subsequently.
+Save your script *in a location not writeable to low privilege users*, set it as the target of the Task Scheduler action, and accept the changes to create the task! Run the script once now, and it will then automatically run when you log in subsequently.
 
 ### Proxies, proxies everywhere
 
