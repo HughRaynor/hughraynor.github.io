@@ -21,5 +21,4 @@ disqus:
 plugins:
   - jekyll-seo-tag
 
-include:
-  [".well-known"]
+include: [".well-known"]
